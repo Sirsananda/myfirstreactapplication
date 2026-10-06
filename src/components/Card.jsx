@@ -1,5 +1,6 @@
 import React from 'react'
 import { Bookmark } from 'lucide-react'
+
 const Card = (props) => {
     return (
         <div className="card">
@@ -23,7 +24,7 @@ const Card = (props) => {
                     <h3>{props.pay}</h3>
                     <p>{props.location}</p>
                 </div>
-                <button>Apply</button>
+                <button className='bg-blue-600'>Apply</button>
             </div>
         </div>
     )
