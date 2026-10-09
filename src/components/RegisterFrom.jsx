@@ -8,7 +8,7 @@ function CompleteForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
+        debugger;
         const formData = new FormData(event.currentTarget);
         const data = Object.fromEntries(formData.entries());
 
@@ -16,7 +16,7 @@ function CompleteForm() {
         data.notifications = formData.getAll("notifications");
         data.range = range;
         data.color = color;
-
+        console.log(data)
         setSubmittedData(data);
         console.log("Submitted form:", data);
     };
